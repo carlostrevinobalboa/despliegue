@@ -34,7 +34,7 @@ CREATE TABLE Responder (
     usuario varchar(16) NOT NULL,
     primary key (formulario, usuario),
     foreign key (usuario) REFERENCES Usuarios on delete cascade on update cascade,
-    foreign key formulario REFERENCES Formulario on delete cascade on update cascade
+    foreign key (formulario) REFERENCES Formulario on delete cascade on update cascade
 );
 
 CREATE TABLE Pregunta (
